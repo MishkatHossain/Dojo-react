@@ -3,6 +3,7 @@ import Home from './Home';
 
 function App() {
 
+  const x  = 10
   return (
     <div className="App">
       <NavigationBar/>
