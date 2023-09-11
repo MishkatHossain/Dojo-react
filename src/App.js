@@ -1,9 +1,8 @@
-import NavigationBar from './navbar';
 import Home from './Home';
+import NavigationBar from './navbar';
 
 function App() {
 
-  const x  = 10
   return (
     <div className="App">
       <NavigationBar/>
