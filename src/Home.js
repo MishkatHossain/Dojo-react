@@ -10,7 +10,8 @@ const Home = () => {
         {title: 'YouTube', body: 'Like share subscribe', author: 'mario', id:3},
         {title: 'StarLight Saber', body: 'Darkest Night is faced by me', author: 'Duplicate', id:4},
         {title: 'Cricket', body: 'Off break is the new Leg break', author: 'Brett Lee', id:5},
-        {title: 'Coding', body: 'The more you code the less you fail', author: 'Mishkat', id:6}
+        {title: 'Coding', body: 'The more you code the less you fail', author: 'Mishkat', id:6},
+        {title: 'Life', body: 'Life lesson is hard and crucial. Let it teach you a lesson', author: 'Mishkat', id:7}
     
     ]); 
 
