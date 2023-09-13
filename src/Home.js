@@ -1,25 +1,16 @@
-import { useState, useEffect } from 'react';
-import Bloglist from './blog-list';
-import useFetch from './usefetch';
-
-
+import BlogList from "./BlogList";
+import useFetch from "./useFetch";
 
 const Home = () => {
-    
-    const {data, isPending, error} = useFetch('http://localhost:8000/blogs')
-    
+  const { error, isPending, data: blogs } = useFetch('http://localhost:8000/blogs')
 
-
-    return ( 
-        <div className="home">
-            {error && <div> {error} </div>}
-            {isPending && <div>Loading...</div>}
-            {data && <Bloglist blogs={data} title="All blogs" />}
-        </div>
-     );
+  return (
+    <div className="home">
+      { error && <div>{ error }</div> }
+      { isPending && <div>Loading...</div> }
+      { blogs && <BlogList blogs={blogs} /> }
+    </div>
+  );
 }
  
 export default Home;
-
-
-// npx json-server --watch data/db.json --port 8000

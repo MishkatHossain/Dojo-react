@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /* base styles */
 * {
@@ -34,27 +34,20 @@
   padding: 20px;
 }
 
-
-.blog-preview{
+/* blog previews / list */
+.blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
 }
-
 .blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-  font-size: large;
-  color: aquamarine;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
-.blog-preview h2{
+.blog-preview h2 {
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 8px;
 }
-
-.blog-preview p1{
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 8px;
+.blog-preview a {
+  text-decoration: none;
 }

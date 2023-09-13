@@ -1,24 +1,19 @@
-const NavigationBar = () => {
+import { Link } from "react-router-dom";
 
-    
-    const w = 'www.facebook.com';
-
-
-    return ( 
-
-        <nav className="navbar">
-            <h1> This is the dojo of mine</h1>
-            <div className="Links">
-                <a href={w}>Home is home</a>
-                
-                <a href="/create" style={{
-                    color: "white",
-                    backgroundColor: '#f1356d',
-                    borderRadius: '8px'
-                }}>New Blog</a>
-            </div>
-        </nav>
-     );
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <h1>The Dojo Blog</h1>
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="/create" style={{ 
+          color: 'white', 
+          backgroundColor: '#f1356d',
+          borderRadius: '8px' 
+        }}>New Blog</Link>
+      </div>
+    </nav>
+  );
 }
  
-export default NavigationBar;
+export default Navbar;
