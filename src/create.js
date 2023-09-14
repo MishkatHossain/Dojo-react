@@ -5,7 +5,7 @@ const Create = () => {
 
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
-  const [author, setAuthor] = useState('');
+  const [author, setAuthor] = useState('mario');
   const [isPending, setIsPending] = useState(false);
 
   const history = useHistory();
@@ -51,6 +51,7 @@ const Create = () => {
 
         <label>Blog author:</label>
         <select
+          required
           value={author}
           onChange={(e)=> setAuthor(e.target.value)}
         
@@ -61,9 +62,12 @@ const Create = () => {
 
         {!isPending && <button>Add Blog</button>}
         {isPending && <button>Add Blog...</button>}
-          <h1> { title } </h1>
-          <p> { body }</p>
-          <p> {author}</p>
+
+
+
+          <h6> { title } </h6>
+          <p6> { body }</p6>
+
       </form>
     </div> 
   );

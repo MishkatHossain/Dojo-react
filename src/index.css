@@ -48,7 +48,7 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
-.blog-details div{
+.blog-details div {
   margin: 20px 0;
 }
 
@@ -78,20 +78,31 @@
 
 .create h2 {
   font-size: 20px;
-  color:#f1356d;
-  margin-bottom: 30px
+  color: #f1356d;
+  margin-bottom: 30px;
 }
 
-.create input, .create textarea, .create select {
-  width: 100%;
+.create input,
+.create select {
+  width: 400px;
   padding: 6px 10px;
-  margin: 10px 0;
+  margin: 10px 0px;
   border: 1px solid #ddd;
   box-sizing: border-box;
+  resize: none;
   display: block;
 }
 
-
+.create textarea {
+  width: 400px;
+  height: 400px;
+  padding: 6px 10px;
+  margin: 10px 0px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  resize: none;
+  display: block;
+}
 
 .create button {
   background: #f1356d;
@@ -101,53 +112,3 @@
   border-radius: 8px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
